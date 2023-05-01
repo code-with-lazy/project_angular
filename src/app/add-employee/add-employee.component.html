@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Employee</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Employee Registration Form</h1>
+		<form [formGroup]="userform" (ngSubmit)="Emp()">
+			<label for="name">Employee Name:</label>
+			<input type="text" id="name" name="name" required formControlName="name"><br>
+
+			<label for="email">Employee email:</label>
+			<input type="email" id="email" name="email" required formControlName="email"><br>
+
+			<label for="phone">Phone no:</label>
+			<input type="tel" id="phone" name="phone" required formControlName="phone"><br>
+
+			<label for="Employee id">Employee ID</label>
+			<input type="text" id="Employee id" name="eid" required formControlName="eid"><br>
+
+			<label for="Designation">Designation:</label>
+			<input type="text" id="'Designation" name="desg" required formControlName="desg"><br>
+			
+			<label for="Salary">Salary</label>
+			<input type="text" id="Salary" name="sal" required formControlName="sal"><br>
+
+			<label for="gender">Gender:</label>
+			<input type="radio" id="male" name="gen" value="male" required formControlName="gen">
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gen" value="female" required formControlName="gen">
+			<label for="female">Female</label><br>
+
+			<button>Submit</button>
+		</form>
+	</div>
+</body>
+</html>

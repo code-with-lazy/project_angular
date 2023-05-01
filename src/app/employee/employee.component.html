@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">EID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of info">
+        <th scope="row" ></th>
+        <td>{{data.EmpID}}</td>
+        <td>{{data.EmpName}}</td>
+        <td>{{data.Email}}</td>
+        <td>{{data.PhoneNo}}</td>
+        <td>{{data.Designation}}</td>
+        <td>{{data.Salary}}</td>
+        <td>{{data.Gender}}</td>
+      </tr>
+    </tbody>
+  </table>
